@@ -23,7 +23,7 @@ jobs:
     runs-on: ${{ inputs.runner || 'ubuntu-22.04' }}
     steps:
       - name: Checkout everest-core
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v4.1.7
         with:
           path: source
       - name: Run clang-format
@@ -49,7 +49,7 @@ jobs:
             compile-${{ env.branch_name_for_cache }}-
             compile-
       - name: Checkout everest-core
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v4.1.7
         with:
           path: source
       - name: Setup run scripts
@@ -112,7 +112,7 @@ jobs:
           name: wheels
           path: wheels
       - name: Checkout everest-core
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v4.1.7
         with:
           path: source
       - name: Setup run scripts
