@@ -23,8 +23,8 @@ python_register_toolchains(
 
 http_archive(
     name = "rules_rust",
-    sha256 = "36ab8f9facae745c9c9c1b33d225623d976e78f2cc3f729b7973d8c20934ab95",
-    urls = ["https://github.com/bazelbuild/rules_rust/releases/download/0.31.0/rules_rust-v0.31.0.tar.gz"],
+    sha256 = "671ddb3fe5ebcf9dd34d051eca7352fbaf33fa53bf61eed0b75a4c34829e5480",
+    urls = ["https://github.com/bazelbuild/rules_rust/releases/download/0.52.2/rules_rust-v0.52.2.tar.gz"],
 )
 
 load("@rules_rust//rust:repositories.bzl", "rules_rust_dependencies", "rust_register_toolchains")
