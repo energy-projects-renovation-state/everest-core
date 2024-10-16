@@ -28,7 +28,7 @@ jobs:
         with:
           path: source
       - name: Run clang-format
-        uses: everest/everest-ci/github-actions/run-clang-format@v1.3.1
+        uses: everest/everest-ci/github-actions/run-clang-format@v1.3.3
         with:
           source-dir: source
           extensions: hpp,cpp
@@ -51,7 +51,7 @@ jobs:
     # This job is currently disabled to allow running ci on PRs from forks
     if: false
     name: Build and Push Build Kit
-    uses: everest/everest-ci/.github/workflows/deploy-single-docker-image.yml@v1.3.1
+    uses: everest/everest-ci/.github/workflows/deploy-single-docker-image.yml@v1.3.3
     needs: setup-env
     secrets:
       SA_GITHUB_PAT: ${{ secrets.SA_GITHUB_PAT }}
