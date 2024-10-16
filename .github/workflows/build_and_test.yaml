@@ -127,18 +127,18 @@ jobs:
         run: |
           tar -czf dist.tar.gz dist
       - name: Upload dist artifact
-        uses: actions/upload-artifact@v4.3.3
+        uses: actions/upload-artifact@v4.4.3
         with:
           path: dist.tar.gz
           name: dist
       - name: Upload wheels artifact
-        uses: actions/upload-artifact@v4.3.3
+        uses: actions/upload-artifact@v4.4.3
         with:
           path: dist-wheels
           name: wheels
       - name: Archive unit test results
         if: always()
-        uses: actions/upload-artifact@v4.3.3
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ctest-report
           path: ${{ github.workspace }}/ctest-report
@@ -192,7 +192,7 @@ jobs:
           run-script run_integration_tests
       - name: Upload result & report as artifact
         if: always()
-        uses: actions/upload-artifact@v4.3.3
+        uses: actions/upload-artifact@v4.4.3
         with:
           path: |
             ${{ github.workspace }}/result.xml
