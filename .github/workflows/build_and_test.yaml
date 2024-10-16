@@ -200,7 +200,7 @@ jobs:
           name: pytest-results
       - name: Render result
         if: always()
-        uses: pmeier/pytest-results-action@v0.6.0
+        uses: pmeier/pytest-results-action@v0.7.1
         with:
           path: ${{ github.workspace }}/result.xml
           summary: True
