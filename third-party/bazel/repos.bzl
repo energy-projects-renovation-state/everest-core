@@ -44,9 +44,9 @@ def everest_core_repos():
     maybe(
         http_archive,
         name = "rules_python",
-        sha256 = "9acc0944c94adb23fba1c9988b48768b1bacc6583b52a2586895c5b7491e2e31",
-        strip_prefix = "rules_python-0.27.0",
-        url = "https://github.com/bazelbuild/rules_python/releases/download/0.27.0/rules_python-0.27.0.tar.gz",
+        sha256 = "0cc05ddb27614baecace068986931e2a6e9f69114e6115fc5dc58250faf56e0f",
+        strip_prefix = "rules_python-0.37.0",
+        url = "https://github.com/bazelbuild/rules_python/releases/download/0.37.0/rules_python-0.37.0.tar.gz",
     )
 
     edm_repositories(
