@@ -9,9 +9,9 @@ load("@everest-core//third-party/bazel:edm.bzl", "edm_repositories")
 def everest_core_repos():
     http_archive(
         name = "rules_foreign_cc",
-        sha256 = "476303bd0f1b04cc311fc258f1708a5f6ef82d3091e53fd1977fa20383425a6a",
-        strip_prefix = "rules_foreign_cc-0.10.1",
-        url = "https://github.com/bazelbuild/rules_foreign_cc/releases/download/0.10.1/rules_foreign_cc-0.10.1.tar.gz",
+        sha256 = "8e5605dc2d16a4229cb8fbe398514b10528553ed4f5f7737b663fdd92f48e1c2",
+        strip_prefix = "rules_foreign_cc-0.13.0",
+        url = "https://github.com/bazelbuild/rules_foreign_cc/releases/download/0.13.0/rules_foreign_cc-0.13.0.tar.gz",
     )
 
     maybe(
