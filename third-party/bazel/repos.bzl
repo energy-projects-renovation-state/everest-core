@@ -17,9 +17,9 @@ def everest_core_repos():
     maybe(
         http_archive,
         name = "com_github_nelhage_rules_boost",
-        url = "https://github.com/nelhage/rules_boost/archive/f02f84fac7673c56bbcfe69dea68044e6e40f92b.tar.gz",
-        sha256 = "4f1f7e809960615ba8e40e3a96300acb8b4d7e6e2fb24423af7347383e4dd1bb",
-        strip_prefix = "rules_boost-f02f84fac7673c56bbcfe69dea68044e6e40f92b",
+        url = "https://github.com/nelhage/rules_boost/archive/c3edeeb93c47ee87d01fc96aec8e48ca9449d10c.tar.gz",
+        sha256 = "48f9cc42df396f944e6be53a6d23fb7f4feefc521aa47cad0730733cb6582dd5",
+        strip_prefix = "rules_boost-c3edeeb93c47ee87d01fc96aec8e48ca9449d10c",
     )
 
     crates_repository(
