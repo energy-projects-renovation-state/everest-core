@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is building with bazel
 on: [pull_request]
 jobs:
   bazel-build-and-test:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - run: echo branch name is ${{ github.ref }}
       - name: Checkout
