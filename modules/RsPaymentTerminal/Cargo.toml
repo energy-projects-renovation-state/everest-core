@@ -12,7 +12,7 @@ zvt = { git="https://github.com/Everest/zvt.git", rev="a5c24ff26ff90c6f8faa9126a
 zvt_feig_terminal = { git="https://github.com/Everest/zvt.git", rev="a5c24ff26ff90c6f8faa9126a8f399a632abf7d0" }
 tokio = { version = "1.32.0", features = ["macros", "rt-multi-thread", "net", "sync"] }
 log = "0.4.20"
-mockall = { version = "0.12.1", optional = true }
+mockall = { version = "0.13.0", optional = true }
 mockall_double = { version = "0.3.1", optional = true}
 
 [build-dependencies]
