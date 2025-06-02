@@ -7,9 +7,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "sigslot",
-        url = "https://github.com/palacaze/sigslot/archive/33802bb3e94c4dfe07bd41b537b36806f94c3e3a.tar.gz",
-        sha256 = "fe00d8a4ecc7e6b831ab4dcb3a848144b83d28494dee74596eb31d038c37f50f",
-        strip_prefix = "sigslot-33802bb3e94c4dfe07bd41b537b36806f94c3e3a",
+        url = "https://github.com/palacaze/sigslot/archive/dbbe4a1cf6528188443983cde6fba0bf38e7aa49.tar.gz",
+        sha256 = "cea90eded1776250d4729ab8a2e37d0f27497fb53c9a7aced774ebaf659fa247",
+        strip_prefix = "sigslot-dbbe4a1cf6528188443983cde6fba0bf38e7aa49",
         build_file = "@everest-core//third-party/bazel:BUILD.sigslot.bazel",
     )
 
