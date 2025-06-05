@@ -13,7 +13,7 @@ git_override(module_name="everest-framework", commit="8031136e5c31a345044e187a68
 bazel_dep(name = "everest-utils", version = "0.5.2")
 git_override(module_name="everest-utils", commit="a03ebb35c35f4b21f0b1604b9f46451feb187ec6", remote="https://github.com/EVerest/everest-utils")
 
-bazel_dep(name = "bazel_features", version = "1.21.0")
+bazel_dep(name = "bazel_features", version = "1.31.0")
 bazel_dep(name = "bazel_skylib", version = "1.7.1")
 BOOST_VERSION = "1.87.0"
 bazel_dep(name = "boost.asio", version = BOOST_VERSION)
