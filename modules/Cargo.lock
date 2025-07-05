@@ -226,7 +226,7 @@ checksum = "3b829e4e32b91e643de6eafe82b1d90675f5874230191a4ffbc1b336dec4d6bf"
 dependencies = [
  "async-trait",
  "axum-core",
- "bitflags",
+ "bitflags 1.3.2",
  "bytes",
  "futures-util",
  "http",
@@ -300,6 +300,12 @@ name = "bitflags"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
+
+[[package]]
+name = "bitflags"
+version = "2.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1b8e56985ec62d17e9c1001dc89c88ecd7dc08e47eba5ec7c29c7b5eeecde967"
 
 [[package]]
 name = "bumpalo"
@@ -1052,6 +1058,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "io-uring"
+version = "0.7.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b86e202f00093dcba4275d4636b93ef9dd75d025ae560d2521b45ea28ab49013"
+dependencies = [
+ "bitflags 2.9.1",
+ "cfg-if",
+ "libc",
+]
+
+[[package]]
 name = "ipnet"
 version = "2.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1753,15 +1770,17 @@ checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
 
 [[package]]
 name = "tokio"
-version = "1.43.0"
+version = "1.46.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3d61fa4ffa3de412bfea335c6ecff681de2b609ba3c77ef3e00e521813a9ed9e"
+checksum = "0cc3a2344dafbe23a245241fe8b09735b521110d30fcefbbd5feb1797ca35d17"
 dependencies = [
  "backtrace",
  "bytes",
+ "io-uring",
  "libc",
  "mio",
  "pin-project-lite",
+ "slab",
  "socket2",
  "tokio-macros",
  "windows-sys 0.52.0",
@@ -2320,7 +2339,7 @@ dependencies = [
 [[package]]
 name = "zvt"
 version = "0.1.1"
-source = "git+https://github.com/Everest/zvt.git?rev=fab0659255778b418cd2a67179d96400e20c6386#fab0659255778b418cd2a67179d96400e20c6386"
+source = "git+https://github.com/Everest/zvt.git?rev=eedcfd0a1fb400004613e08b968f46931970a85e#eedcfd0a1fb400004613e08b968f46931970a85e"
 dependencies = [
  "anyhow",
  "async-stream",
@@ -2339,7 +2358,7 @@ dependencies = [
 [[package]]
 name = "zvt_builder"
 version = "0.1.1"
-source = "git+https://github.com/Everest/zvt.git?rev=fab0659255778b418cd2a67179d96400e20c6386#fab0659255778b418cd2a67179d96400e20c6386"
+source = "git+https://github.com/Everest/zvt.git?rev=eedcfd0a1fb400004613e08b968f46931970a85e#eedcfd0a1fb400004613e08b968f46931970a85e"
 dependencies = [
  "chrono",
  "hex",
@@ -2352,7 +2371,7 @@ dependencies = [
 [[package]]
 name = "zvt_derive"
 version = "0.1.1"
-source = "git+https://github.com/Everest/zvt.git?rev=fab0659255778b418cd2a67179d96400e20c6386#fab0659255778b418cd2a67179d96400e20c6386"
+source = "git+https://github.com/Everest/zvt.git?rev=eedcfd0a1fb400004613e08b968f46931970a85e#eedcfd0a1fb400004613e08b968f46931970a85e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2362,7 +2381,7 @@ dependencies = [
 [[package]]
 name = "zvt_feig_terminal"
 version = "0.1.0"
-source = "git+https://github.com/Everest/zvt.git?rev=fab0659255778b418cd2a67179d96400e20c6386#fab0659255778b418cd2a67179d96400e20c6386"
+source = "git+https://github.com/Everest/zvt.git?rev=eedcfd0a1fb400004613e08b968f46931970a85e#eedcfd0a1fb400004613e08b968f46931970a85e"
 dependencies = [
  "anyhow",
  "async-stream",
