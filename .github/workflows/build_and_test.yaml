@@ -37,7 +37,7 @@ jobs:
     runs-on: ${{ inputs.runner || 'ubuntu-22.04' }}
     steps:
       - name: Download dist dir
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v5.0.0
         with:
           name: dist
       - name: Extract dist.tar.gz
@@ -45,7 +45,7 @@ jobs:
           tar -xzf ${{ github.workspace }}/dist.tar.gz -C ${{ github.workspace }}
       - name: Download wheels
         # if: ${{ inputs.run_install_wheels == 'true' }}
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v5.0.0
         with:
           name: wheels
           path: wheels
@@ -77,7 +77,7 @@ jobs:
             f.write(f"tag={tag}\n")
             print(f"Set tag={tag}")
       - name: Download build-kit image
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-kit
       - name: Load build-kit image
