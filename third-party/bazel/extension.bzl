@@ -43,9 +43,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "libocpp",
-        url = "https://github.com/EVerest/libocpp/archive/9c8ec21f15a404b27438accc4fe006cfcd6accbe.tar.gz",
-        sha256 = "efa065955a420d4c545c0deafc14fc2cc0cff8d172dea1daa2615bc7fe2bdc72",
-        strip_prefix = "libocpp-9c8ec21f15a404b27438accc4fe006cfcd6accbe",
+        url = "https://github.com/EVerest/libocpp/archive/9ee949e3dd1cbc28e38b10023e273122e2092bc2.tar.gz",
+        sha256 = "2224f3af23f3abccde172e307d093ecac11a36cdd960940aada7933df1a67422",
+        strip_prefix = "libocpp-9ee949e3dd1cbc28e38b10023e273122e2092bc2",
         build_file = "@everest-core//third-party/bazel:BUILD.libocpp.bazel",
     )
 
