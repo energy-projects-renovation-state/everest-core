@@ -15,7 +15,7 @@ git_override(
 )
 
 bazel_dep(name = "everest-utils", version = "0.6.0")
-git_override(module_name="everest-utils", commit="f1117f9d6a9a2fe29d350dd50ecc727a7101ead1", remote="https://github.com/EVerest/everest-utils")
+git_override(module_name="everest-utils", commit="3636f83e507b1bb5e0c6373a9a9f0028f65a7693", remote="https://github.com/EVerest/everest-utils")
 
 bazel_dep(name = "bazel_features", version = "1.21.0")
 bazel_dep(name = "bazel_skylib", version = "1.7.1")
