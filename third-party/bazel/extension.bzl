@@ -34,9 +34,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "libevse-security",
-        url = "https://github.com/EVerest/libevse-security/archive/bf5a015cfeacad72509c1620464460753e5a5bec.tar.gz",
-        sha256 = "ddf1c033d3db9c81b14240efaa0b89845d493b253d69d5f5623eebed4fe4da10",
-        strip_prefix = "libevse-security-bf5a015cfeacad72509c1620464460753e5a5bec",
+        url = "https://github.com/EVerest/libevse-security/archive/71870efd97bd276a21a9513baa8cc3e79b5f4665.tar.gz",
+        sha256 = "f5f7e27a71084abdbd2a116baaef36dcc44ebb8d6e2826cf8ae6f891469b3d2d",
+        strip_prefix = "libevse-security-71870efd97bd276a21a9513baa8cc3e79b5f4665",
         build_file = "@everest-core//third-party/bazel:BUILD.libevse-security.bazel",
     )
 
