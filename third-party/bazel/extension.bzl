@@ -70,9 +70,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "com_github_pboettch_json-schema-validator",
-        url = "https://github.com/pboettch/json-schema-validator/archive/f4194d7e24e2e2365660ff35b57a7c4e088b27fa.tar.gz",
-        sha256 = "f71f2fbef135a61ad7bd9444f4202f9698a4b1c70279cb1e9b2567a6d996aaa1",
-        strip_prefix = "json-schema-validator-f4194d7e24e2e2365660ff35b57a7c4e088b27fa",
+        url = "https://github.com/pboettch/json-schema-validator/archive/920bdddabfc69352cd45463564de41aa07fcb41a.tar.gz",
+        sha256 = "c18bedf5140ac3d7edb3328becb6f04ba6f5ed23778f5270b3dd0107683da593",
+        strip_prefix = "json-schema-validator-920bdddabfc69352cd45463564de41aa07fcb41a",
         build_file = "@everest-framework//third-party/bazel:BUILD.json-schema-validator.bazel",
     )
 
