@@ -16,9 +16,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "pugixml",
-        url = "https://github.com/zeux/pugixml/archive/ee86beb30e4973f5feffe3ce63bfa4fbadf72f38.tar.gz",
-        sha256 = "51c102d4187fac99daa38af281b0772c5e6c586f65004cdc63f8f2e011a21492",
-        strip_prefix = "pugixml-ee86beb30e4973f5feffe3ce63bfa4fbadf72f38",
+        url = "https://github.com/zeux/pugixml/archive/61c944895e071872370219cadade8423dc6e04dc.tar.gz",
+        sha256 = "d82e28c844f46165bdb2c160466073087888ec81ea87fbe66e3dc7f36aa5c835",
+        strip_prefix = "pugixml-61c944895e071872370219cadade8423dc6e04dc",
         build_file = "@everest-core//third-party/bazel:BUILD.pugixml.bazel",
     )
 
