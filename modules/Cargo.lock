@@ -48,7 +48,7 @@ dependencies = [
  "mockall 0.12.1",
  "mockall_double",
  "tokio",
- "zvt",
+ "zvt 0.1.1 (git+https://github.com/Everest/zvt.git?rev=d178e828b623c479a9d54643dc61c4ecf33a417b)",
  "zvt_feig_terminal",
 ]
 
@@ -2332,8 +2332,27 @@ dependencies = [
  "pretty-hex",
  "tokio",
  "tokio-stream",
- "zvt_builder",
- "zvt_derive",
+ "zvt_builder 0.1.1 (git+https://github.com/Everest/zvt.git?rev=67ecf299f80963d5ef6ed14922796532e05caf03)",
+ "zvt_derive 0.1.1 (git+https://github.com/Everest/zvt.git?rev=67ecf299f80963d5ef6ed14922796532e05caf03)",
+]
+
+[[package]]
+name = "zvt"
+version = "0.1.1"
+source = "git+https://github.com/Everest/zvt.git?rev=d178e828b623c479a9d54643dc61c4ecf33a417b#d178e828b623c479a9d54643dc61c4ecf33a417b"
+dependencies = [
+ "anyhow",
+ "async-stream",
+ "chrono",
+ "futures",
+ "log",
+ "num-derive",
+ "num-traits",
+ "pretty-hex",
+ "tokio",
+ "tokio-stream",
+ "zvt_builder 0.1.1 (git+https://github.com/Everest/zvt.git?rev=d178e828b623c479a9d54643dc61c4ecf33a417b)",
+ "zvt_derive 0.1.1 (git+https://github.com/Everest/zvt.git?rev=d178e828b623c479a9d54643dc61c4ecf33a417b)",
 ]
 
 [[package]]
@@ -2346,13 +2365,36 @@ dependencies = [
  "log",
  "thiserror",
  "yore",
- "zvt_derive",
+ "zvt_derive 0.1.1 (git+https://github.com/Everest/zvt.git?rev=67ecf299f80963d5ef6ed14922796532e05caf03)",
+]
+
+[[package]]
+name = "zvt_builder"
+version = "0.1.1"
+source = "git+https://github.com/Everest/zvt.git?rev=d178e828b623c479a9d54643dc61c4ecf33a417b#d178e828b623c479a9d54643dc61c4ecf33a417b"
+dependencies = [
+ "chrono",
+ "hex",
+ "log",
+ "thiserror",
+ "yore",
+ "zvt_derive 0.1.1 (git+https://github.com/Everest/zvt.git?rev=d178e828b623c479a9d54643dc61c4ecf33a417b)",
 ]
 
 [[package]]
 name = "zvt_derive"
 version = "0.1.1"
 source = "git+https://github.com/Everest/zvt.git?rev=67ecf299f80963d5ef6ed14922796532e05caf03#67ecf299f80963d5ef6ed14922796532e05caf03"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.98",
+]
+
+[[package]]
+name = "zvt_derive"
+version = "0.1.1"
+source = "git+https://github.com/Everest/zvt.git?rev=d178e828b623c479a9d54643dc61c4ecf33a417b#d178e828b623c479a9d54643dc61c4ecf33a417b"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2384,5 +2426,5 @@ dependencies = [
  "tonic",
  "trust-dns-client",
  "trust-dns-proto",
- "zvt",
+ "zvt 0.1.1 (git+https://github.com/Everest/zvt.git?rev=67ecf299f80963d5ef6ed14922796532e05caf03)",
 ]
