@@ -62,12 +62,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "android-tzdata"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e999941b234f3131b00bc13c22d06e8c5ff726d1b6318ac7eb276997bbb4fef0"
-
-[[package]]
 name = "android_system_properties"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -306,16 +300,15 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "chrono"
-version = "0.4.39"
+version = "0.4.42"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e36cc9d416881d2e24f9a963be5fb1cd90966419ac844274161d10488b3e825"
+checksum = "145052bdd345b87320e369255277e3fb5152762ad123a901ef5c262dd38fe8d2"
 dependencies = [
- "android-tzdata",
  "iana-time-zone",
  "js-sys",
  "num-traits",
  "wasm-bindgen",
- "windows-targets 0.52.6",
+ "windows-link",
 ]
 
 [[package]]
@@ -1945,7 +1938,7 @@ dependencies = [
 [[package]]
 name = "zvt"
 version = "0.1.1"
-source = "git+https://github.com/Everest/zvt.git?rev=25b39fc344336a6b0da35b81ea89f476652339c9#25b39fc344336a6b0da35b81ea89f476652339c9"
+source = "git+https://github.com/Everest/zvt.git?rev=60574939d2cbe35b5d4fc9b03af7e8c3e098706c#60574939d2cbe35b5d4fc9b03af7e8c3e098706c"
 dependencies = [
  "anyhow",
  "async-stream",
@@ -1965,7 +1958,7 @@ dependencies = [
 [[package]]
 name = "zvt_builder"
 version = "0.1.1"
-source = "git+https://github.com/Everest/zvt.git?rev=25b39fc344336a6b0da35b81ea89f476652339c9#25b39fc344336a6b0da35b81ea89f476652339c9"
+source = "git+https://github.com/Everest/zvt.git?rev=60574939d2cbe35b5d4fc9b03af7e8c3e098706c#60574939d2cbe35b5d4fc9b03af7e8c3e098706c"
 dependencies = [
  "chrono",
  "hex",
@@ -1978,7 +1971,7 @@ dependencies = [
 [[package]]
 name = "zvt_derive"
 version = "0.1.1"
-source = "git+https://github.com/Everest/zvt.git?rev=25b39fc344336a6b0da35b81ea89f476652339c9#25b39fc344336a6b0da35b81ea89f476652339c9"
+source = "git+https://github.com/Everest/zvt.git?rev=60574939d2cbe35b5d4fc9b03af7e8c3e098706c#60574939d2cbe35b5d4fc9b03af7e8c3e098706c"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1988,7 +1981,7 @@ dependencies = [
 [[package]]
 name = "zvt_feig_terminal"
 version = "0.1.0"
-source = "git+https://github.com/Everest/zvt.git?rev=25b39fc344336a6b0da35b81ea89f476652339c9#25b39fc344336a6b0da35b81ea89f476652339c9"
+source = "git+https://github.com/Everest/zvt.git?rev=60574939d2cbe35b5d4fc9b03af7e8c3e098706c#60574939d2cbe35b5d4fc9b03af7e8c3e098706c"
 dependencies = [
  "anyhow",
  "async-stream",
