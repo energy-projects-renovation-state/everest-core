@@ -25,9 +25,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "libtimer",
-        url = "https://github.com/EVerest/libtimer/archive/445ae5d7022c98603c00119506798ada85923e54.tar.gz",
-        sha256 = "00c5bcb269e14b2c374082bb7de538b8d9f64756b55ff497fee412cd1c9eef1b",
-        strip_prefix = "libtimer-445ae5d7022c98603c00119506798ada85923e54",
+        url = "https://github.com/EVerest/libtimer/archive/8b67a8eb17de70198e4e47ee8ed533c99fd25cc2.tar.gz",
+        sha256 = "b37085b814e13bf65a6b9c30bf0973be44ae80f3bbcc05fa078489124ba0558a",
+        strip_prefix = "libtimer-8b67a8eb17de70198e4e47ee8ed533c99fd25cc2",
         build_file = "@everest-core//third-party/bazel:BUILD.libtimer.bazel",
     )
 
