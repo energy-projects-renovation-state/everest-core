@@ -7,7 +7,7 @@ name = "RsExample"
 version = "0.1.0"
 dependencies = [
  "everestrs",
- "everestrs-build",
+ "everestrs-build 0.25.0",
  "serde",
  "serde_json",
 ]
@@ -17,7 +17,7 @@ name = "RsExampleUser"
 version = "0.1.0"
 dependencies = [
  "everestrs",
- "everestrs-build",
+ "everestrs-build 0.25.0",
  "serde",
  "serde_json",
 ]
@@ -30,7 +30,7 @@ dependencies = [
  "backon",
  "chrono",
  "everestrs",
- "everestrs-build",
+ "everestrs-build 0.25.0",
  "log",
  "mockall 0.12.1",
  "mockall_double",
@@ -43,7 +43,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "everestrs",
- "everestrs-build",
+ "everestrs-build 0.25.0",
  "log",
  "mockall 0.12.1",
  "mockall_double",
@@ -487,7 +487,7 @@ source = "git+https://github.com/everest/everest-framework.git?tag=v0.24.0#059e9
 dependencies = [
  "clap",
  "cxx",
- "everestrs-build",
+ "everestrs-build 0.24.0",
  "log",
  "serde",
  "serde_json",
@@ -499,6 +499,20 @@ dependencies = [
 name = "everestrs-build"
 version = "0.24.0"
 source = "git+https://github.com/everest/everest-framework.git?tag=v0.24.0#059e95ca6cdd23f318259a87480c0b1f48d0cf72"
+dependencies = [
+ "anyhow",
+ "argh",
+ "convert_case",
+ "minijinja",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+]
+
+[[package]]
+name = "everestrs-build"
+version = "0.25.0"
+source = "git+https://github.com/everest/everest-framework.git?tag=v0.25.0#6b801295d6de4b93f30b9a3b30915a099882c621"
 dependencies = [
  "anyhow",
  "argh",
