@@ -5,7 +5,7 @@ paho-mqtt==1.6.1
 pyftpdlib==1.5.7
 ocpp==0.17.0
 websockets==10.4
-pyOpenSSL==23.0.0
+pyOpenSSL==23.3.0
 cryptography==39.0.2
 packaging==23.0
 pycparser==2.21
