@@ -57,7 +57,7 @@ jobs:
           name: ${{ inputs.wheels_artifact_name }}
           path: wheels
       - name: Checkout repository
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v6.0.2
         with:
           path: source
       - name: Setup run scripts
