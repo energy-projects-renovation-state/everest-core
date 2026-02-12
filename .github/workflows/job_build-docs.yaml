@@ -92,7 +92,7 @@ jobs:
             compile-${{ env.branch_name_for_cache }}-
             compile-
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: source
       - name: Setup run scripts
