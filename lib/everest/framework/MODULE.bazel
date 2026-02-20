@@ -45,7 +45,7 @@ bazel_dep(name = "fmt", version = "12.1.0", repo_name = "com_github_fmtlib_fmt")
 
 bazel_dep(name = "sqlite3", version = "3.51.2")
 
-bazel_dep(name = "openssl", version = "3.3.1.bcr.6")
+bazel_dep(name = "openssl", version = "3.5.5.bcr.0")
 
 bazel_dep(name = "rapidyaml", version = "0.10.0")
 
