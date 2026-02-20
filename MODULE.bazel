@@ -20,7 +20,7 @@ local_path_override(
     path="applications/utils"
 )
 
-bazel_dep(name = "bazel_features", version = "1.21.0")
+bazel_dep(name = "bazel_features", version = "1.41.0")
 bazel_dep(name = "bazel_skylib", version = "1.7.1")
 BOOST_VERSION = "1.87.0"
 bazel_dep(name = "boost.asio", version = BOOST_VERSION)
