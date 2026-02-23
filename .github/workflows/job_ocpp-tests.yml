@@ -91,7 +91,7 @@ jobs:
       - name: Upload result and report as artifact
         continue-on-error: true
         if: ${{ steps.run_ocpp_tests.outcome == 'success' || steps.run_ocpp_tests.outcome == 'failure' }}
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.6.2
         with:
           if-no-files-found: error
           name: ${{ env.OCPP_TESTS_ARTIFACT_NAME }}
