@@ -114,7 +114,7 @@ jobs:
           fi
           ssh-add ~/.ssh/id_ed25519
       - name: Checkout local github actions
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ github.repository_owner }}/everest-ci
           ref: ${{ inputs.ref_everest_ci }}
@@ -132,7 +132,7 @@ jobs:
             compile-${{ env.branch_name_for_cache }}-
             compile-
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: source
       - name: Setup run scripts

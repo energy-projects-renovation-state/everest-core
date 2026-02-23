@@ -39,7 +39,7 @@ jobs:
       build_kit_artifact_name: ${{ env.BUILD_KIT_ARTIFACT_NAME }}
     steps:
       - name: Checkout Dockerfile
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ github.repository }}
           path: source
