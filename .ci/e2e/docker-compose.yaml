@@ -2,7 +2,7 @@ version: "3.6"
 
 services:
   mqtt-server:
-    image: eclipse-mosquitto:2.0.10
+    image: eclipse-mosquitto:2.0.22
     volumes:
       - type: bind
         source: ./mosquitto/mosquitto.conf
