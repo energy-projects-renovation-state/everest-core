@@ -29,8 +29,8 @@ cc_library(
     ],
     deps = [
         ":cert_rehash",
-        "@everest-core//lib/everest/framework:framework",
-        "@libtimer",
+        "//lib/everest/framework:framework",
+        "//lib/everest/timer:libtimer",
         "@openssl//:crypto",
         "@openssl//:ssl",
     ],

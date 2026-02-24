@@ -1,17 +1,17 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
 cc_library(
-    name = "liblog",
-    srcs = glob(["lib/*.cpp"]),
+    name = "everest-sqlite",
+    srcs = glob(["lib/everest/database/sqlite/*.cpp"]),
     hdrs = glob(["include/**/*.hpp"]),
     deps = [
-        "@boost.utility",
-        "@boost.exception",
-        "@boost.log",
+        "@sqlite3",
+        "@com_github_nlohmann_json//:json",
+        "//lib/everest/log:liblog",
     ],
     visibility = [
         "//visibility:public",
     ],
     strip_include_prefix = "include",
-    cxxopts = ["-std=c++17"]
+    copts = ["-std=c++17"],
 )
