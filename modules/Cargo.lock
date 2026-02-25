@@ -48,7 +48,7 @@ dependencies = [
  "mockall 0.12.1",
  "mockall_double",
  "tokio",
- "zvt",
+ "zvt 1.0.0",
  "zvt_feig_terminal",
 ]
 
@@ -2008,8 +2008,28 @@ dependencies = [
  "thiserror 2.0.17",
  "tokio",
  "tokio-stream",
- "zvt_builder",
- "zvt_derive",
+ "zvt_builder 0.1.1",
+ "zvt_derive 0.1.1",
+]
+
+[[package]]
+name = "zvt"
+version = "1.0.0"
+source = "git+https://github.com/Everest/zvt.git?rev=05e973cfe97298f314d559dfdba4f2f8db097180#05e973cfe97298f314d559dfdba4f2f8db097180"
+dependencies = [
+ "anyhow",
+ "async-stream",
+ "chrono",
+ "futures",
+ "log",
+ "num-derive",
+ "num-traits",
+ "pretty-hex",
+ "thiserror 2.0.17",
+ "tokio",
+ "tokio-stream",
+ "zvt_builder 1.0.0",
+ "zvt_derive 1.0.0",
 ]
 
 [[package]]
@@ -2022,13 +2042,36 @@ dependencies = [
  "log",
  "thiserror 2.0.17",
  "yore",
- "zvt_derive",
+ "zvt_derive 0.1.1",
+]
+
+[[package]]
+name = "zvt_builder"
+version = "1.0.0"
+source = "git+https://github.com/Everest/zvt.git?rev=05e973cfe97298f314d559dfdba4f2f8db097180#05e973cfe97298f314d559dfdba4f2f8db097180"
+dependencies = [
+ "chrono",
+ "hex",
+ "log",
+ "thiserror 2.0.17",
+ "yore",
+ "zvt_derive 1.0.0",
 ]
 
 [[package]]
 name = "zvt_derive"
 version = "0.1.1"
 source = "git+https://github.com/Everest/zvt.git?rev=60574939d2cbe35b5d4fc9b03af7e8c3e098706c#60574939d2cbe35b5d4fc9b03af7e8c3e098706c"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.98",
+]
+
+[[package]]
+name = "zvt_derive"
+version = "1.0.0"
+source = "git+https://github.com/Everest/zvt.git?rev=05e973cfe97298f314d559dfdba4f2f8db097180#05e973cfe97298f314d559dfdba4f2f8db097180"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2058,5 +2101,5 @@ dependencies = [
  "tokio",
  "tokio-stream",
  "tonic",
- "zvt",
+ "zvt 0.1.1",
 ]
