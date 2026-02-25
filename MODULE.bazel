@@ -7,7 +7,7 @@ module(
 # B A Z E L  C E N T R A L  R E G I S T R Y # https://registry.bazel.build/
 ###############################################################################
 
-bazel_dep(name = "bazel_features", version = "1.21.0")
+bazel_dep(name = "bazel_features", version = "1.42.0")
 bazel_dep(name = "bazel_skylib", version = "1.7.1")
 BOOST_VERSION = "1.87.0"
 bazel_dep(name = "boost.asio", version = BOOST_VERSION)
