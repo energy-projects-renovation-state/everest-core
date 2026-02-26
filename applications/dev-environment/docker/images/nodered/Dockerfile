@@ -1,4 +1,4 @@
-FROM nodered/node-red:4.1.2
+FROM nodered/node-red:4.1.6
 RUN npm install node-red-dashboard@3.6.6
 RUN npm install node-red-contrib-ui-actions@0.1.8
 RUN npm install node-red-node-ui-table@0.4.5
