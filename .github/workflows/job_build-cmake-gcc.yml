@@ -140,7 +140,7 @@ jobs:
           mkdir scripts
           rsync -a source/${{ inputs.build_kit_scripts_directory }}/ scripts
       - name: Download build-kit image
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.build-kit-artifact-name }}
       - name: Load build-kit image
@@ -166,7 +166,7 @@ jobs:
           build-kit run-script run_unit_tests
       - name: Archive test results
         if: ${{ always() && (steps.run_unit_tests.outcome == 'success' || steps.run_unit_tests.outcome == 'failure') }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           if-no-files-found: error
           name: ${{ env.CTEST_REPORT_ARTIFACT_NAME }}
@@ -222,7 +222,7 @@ jobs:
           tar -czf dist.tar.gz dist
       - name: Upload dist artifact
         if: ${{ always() && (steps.create_dist.outcome == 'success' || steps.create_dist.outcome == 'failure') }}
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v7.0.0
         with:
           if-no-files-found: error
           path: dist.tar.gz
@@ -238,7 +238,7 @@ jobs:
           build-kit run-script install_wheels
       - name: Upload wheels artifact
         if: ${{ always() && (steps.create_wheels.outcome == 'success' || steps.create_wheels.outcome == 'failure') }}
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v7.0.0
         with:
           if-no-files-found: error
           path: ${{ inputs.wheels_path }}
