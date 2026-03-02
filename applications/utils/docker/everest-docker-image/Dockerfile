@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM debian:12-slim AS builder
+FROM debian:13-slim AS builder
 
 ARG REPO
 ARG BRANCH
@@ -87,7 +87,7 @@ RUN if [ "${OCPP_CONFIG}" != "ocpp-config.json" ]; then mv /opt/everest/config/"
 COPY logging.ini /opt/everest/config
 
 # syntax=docker/dockerfile:1
-FROM debian:12-slim
+FROM debian:13-slim
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
