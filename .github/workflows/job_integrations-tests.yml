@@ -66,14 +66,14 @@ jobs:
       integration_tests_artifact_name: ${{ env.INTEGRATION_TESTS_ARTIFACT_NAME }}
     steps:
       - name: Download dist dir
-        uses: actions/download-artifact@v5.0.0
+        uses: actions/download-artifact@v8.0.0
         with:
           name: ${{ inputs.dist_artifact_name }}
       - name: Extract dist.tar.gz
         run: |
           tar -xzf ${{ github.workspace }}/dist.tar.gz -C ${{ github.workspace }}
       - name: Download wheels
-        uses: actions/download-artifact@v5.0.0
+        uses: actions/download-artifact@v8.0.0
         with:
           name: ${{ inputs.wheels_artifact_name }}
           path: wheels
@@ -86,7 +86,7 @@ jobs:
           mkdir scripts
           rsync -a source/${{ inputs.build_kit_scripts_directory }}/ scripts
       - name: Download build-kit image
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.build_kit_artifact_name }}
       - name: Load build-kit image
@@ -110,7 +110,7 @@ jobs:
           run-script run_integration_tests
       - name: Upload result and report as artifact
         if: ${{ always() && (steps.run_integration_tests.outcome == 'success' || steps.run_integration_tests.outcome == 'failure') }}
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v7.0.0
         with:
           if-no-files-found: error
           name: ${{ env.INTEGRATION_TESTS_ARTIFACT_NAME }}
