@@ -72,7 +72,7 @@ jobs:
           git config --global user.name "Pionix Github Service Account"
           git config --global user.email "compiler@pionix.de"
       - name: Download build-kit image
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.build_kit_artifact_name }}
       - name: Load build-kit image
@@ -130,7 +130,7 @@ jobs:
           build-kit run-script build_docs
           docker commit build-docs-container build-docs-image
       - name: Upload Documentation Artifact
-        uses: actions/upload-artifact@v4.6.2
+        uses: actions/upload-artifact@v7.0.0
         with:
           if-no-files-found: error
           path: ${{ github.workspace }}/build/docs/deployed_docs_repo/docs/
