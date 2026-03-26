@@ -7,7 +7,7 @@ ocpp==0.17.0
 websockets==10.4
 pyOpenSSL==23.0.0
 cryptography==39.0.2
-packaging==23.0
+packaging==23.2
 pycparser==2.21
 attrs>=22.2.0
 cffi==1.15.1
