@@ -55,7 +55,7 @@ jobs:
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v3
       - name: Build
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: source/${{ inputs.build_kit_docker_directory }}
           push: false
