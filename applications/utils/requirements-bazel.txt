@@ -262,9 +262,9 @@ jsonschema==4.26.0 \
     # via
     #   ev-dev-tools (applications/utils/ev-dev-tools/setup.cfg)
     #   ocpp
-jsonschema-specifications==2023.11.1 \
-    --hash=sha256:c9b234904ffe02f079bf91b14d79987faa685fd4b39c377a0996954c0090b9ca \
-    --hash=sha256:f596778ab612b3fd29f72ea0d990393d0540a5aab18bf0407a46632eab540779
+jsonschema-specifications==2025.9.1 \
+    --hash=sha256:98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe \
+    --hash=sha256:b540987f239e745613c7a9176f3edb72b832a4ac465cf02712288397832b5e8d
     # via jsonschema
 markupsafe==2.1.3 \
     --hash=sha256:05fb21170423db021895e1ea1e1f3ab3adb85d1c2333cbc2310f2a26bc77272e \
