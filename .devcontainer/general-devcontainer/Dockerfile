@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ghcr.io/everest/everest-ci/dev-env-base:v1.5.4
+FROM ghcr.io/everest/everest-ci/dev-env-base:v1.5.5
 
 # Build arguments for customization
 # User and group configuration i.e. to match host user inside the container
