@@ -38,7 +38,7 @@ jobs:
     runs-on: ${{ inputs.runner }}
     steps:
       - name: Checkout local github actions
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ github.repository_owner }}/everest-ci
           ref: ${{ inputs.ref_everest_ci }}
