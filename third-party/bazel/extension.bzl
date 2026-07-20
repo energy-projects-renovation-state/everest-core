@@ -26,9 +26,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "com_github_pboettch_json-schema-validator",
-        url = "https://github.com/pboettch/json-schema-validator/archive/c780404a84dd9ba978ba26bc58d17cb43fa7bc80.tar.gz",
-        sha256 = "5b6ef2fd33c7fbc38fefc851f07281699fc45add5a558c2ac3f24be3e36eb0b6",
-        strip_prefix = "json-schema-validator-c780404a84dd9ba978ba26bc58d17cb43fa7bc80",
+        url = "https://github.com/pboettch/json-schema-validator/archive/0a5c207a8a02dae8c781a205b7746395fbee1f56.tar.gz",
+        sha256 = "e477dbdf61da706f179fc4bb2b77bda539b455c9f698f6c6360d37f6af3a54d2",
+        strip_prefix = "json-schema-validator-0a5c207a8a02dae8c781a205b7746395fbee1f56",
         build_file = "@everest-core//third-party/bazel:BUILD.json-schema-validator.bazel",
     )
 
