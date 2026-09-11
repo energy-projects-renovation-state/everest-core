@@ -45,14 +45,14 @@ jobs:
       ocpp_tests_artifact_name: ${{ env.OCPP_TESTS_ARTIFACT_NAME }}
     steps:
       - name: Download dist dir
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v4.3.0
         with:
           name: ${{ inputs.dist_artifact_name }}
       - name: Extract dist.tar.gz
         run: |
           tar -xzf ${{ github.workspace }}/dist.tar.gz -C ${{ github.workspace }}
       - name: Download wheels
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v4.3.0
         with:
           name: ${{ inputs.wheels_artifact_name }}
           path: wheels
