@@ -1,4 +1,4 @@
-FROM maven:3.6.1-jdk-11
+FROM maven:3.8.6-jdk-11
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
