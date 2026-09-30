@@ -14,7 +14,7 @@ jobs:
   backport:
     if: github.event.pull_request.labels && contains(join(github.event.pull_request.labels.*.name, ', '), 'backport ')
     name: backport pr
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
       pull-requests: write
