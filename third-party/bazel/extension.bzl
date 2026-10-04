@@ -17,9 +17,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "com_github_HowardHinnant_date",
-        url = "https://github.com/HowardHinnant/date/archive/f94b8f36c6180be0021876c4a397a054fe50c6f2.tar.gz",
-        sha256 = "8be4c3a52d99b22a4478ce3e2a23fa4b38587ea3d3bc3d1a4d68de22c2e65fb2",
-        strip_prefix = "date-f94b8f36c6180be0021876c4a397a054fe50c6f2",
+        url = "https://github.com/HowardHinnant/date/archive/43d052df84ab7ed0abfde93c6cc0074da042bdc5.tar.gz",
+        sha256 = "229f20d45689575853cf835c52f91843200b95d9082f0a4aeadd4f8d2b229915",
+        strip_prefix = "date-43d052df84ab7ed0abfde93c6cc0074da042bdc5",
         build_file = "@everest-core//third-party/bazel:BUILD.date.bazel",
     )
 
