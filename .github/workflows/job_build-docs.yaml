@@ -158,7 +158,7 @@ jobs:
           build-kit run-script build_docs
           docker commit build-docs-container build-docs-image
       - name: Upload Documentation Artifact
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7.0.2
         with:
           if-no-files-found: error
           path: ${{ github.workspace }}/build/docs/deployed_docs_repo/docs/
