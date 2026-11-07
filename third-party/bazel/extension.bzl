@@ -35,9 +35,9 @@ def _deps_impl(module_ctx):
     maybe(
         http_archive,
         name = "com_github_warmcatt_libwebsockets",
-        url = "https://github.com/warmcat/libwebsockets/archive/85c6f7959fd40d8aaf7a50be3c9b75f08389a01c.tar.gz",
-        sha256 = "eceb5b1efdaf73505ee60c1761ae457f9d663aed06009057f8fed117ed8e91b3",
-        strip_prefix = "libwebsockets-85c6f7959fd40d8aaf7a50be3c9b75f08389a01c",
+        url = "https://github.com/warmcat/libwebsockets/archive/950a789fa15342d5270c108da54f270dffff5a6e.tar.gz",
+        sha256 = "809169d8d00e2f6644e863dc8f28fbbbda2dc5936a1d0f6ff985e6daf1bcccf8",
+        strip_prefix = "libwebsockets-950a789fa15342d5270c108da54f270dffff5a6e",
         build_file = "@everest-core//third-party/bazel:BUILD.libwebsockets.bazel",
     )
 
